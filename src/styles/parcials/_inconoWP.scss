@@ -1,0 +1,25 @@
+.iconWP{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+    right: 30px;
+    line-height: 55px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: .8rem;
+    box-shadow: 0px 1px 10px rbga(0,0,0,0.3);
+    z-index: 100;
+    &:hover{
+        text-decoration: none;
+        color: #0df053;
+        background-color: #fff;
+    }
+    @include breakpiont(mobile){
+        width: 50px;
+        height: 50px;
+        padding: auto;
+    }
+}

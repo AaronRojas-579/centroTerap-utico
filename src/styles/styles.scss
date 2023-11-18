@@ -1,0 +1,15 @@
+@import"./parcials/vars";
+@import "./parcials/mediaquerie";
+@import "./parcials/navBar";
+@import "./parcials/footer";
+@import "./parcials/inconoWP";
+@import "./parcials/container_incio"; ;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuenteTerciaria;
+    body{
+        background-color: white;
+    }
+}

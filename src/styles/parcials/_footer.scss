@@ -1,0 +1,31 @@
+.contenedorFooter{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    background-color:$naranjaClaro;
+    color: $celeste;
+    ul{
+        width: 10rem;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h3{
+            margin-bottom: 1.5rem;
+        }
+        li{
+
+            margin-bottom: .7rem;
+            transition: all .4s;
+            &:hover{
+                transform: scale(1.2 , 1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.infoBar {
+    width: 100%;
+    height: inherit;
+    padding: 1rem;
+    background-color: $violeta;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    gap: 1rem;
+    position: fixed;
+
+    .numeroTel {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .numeroWp {
+        a {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            text-decoration: none;
+            gap: 1rem;
+            color: white;
+            transition: all .3s;
+            &:hover{
+                color: $naranjaClaro;
+            }
+        }
+
+    }
+
+    * {
+        font-size: 1.7rem;
+        svg {
+            width: 2.3rem;
+            height: 2.3rem;
+        }
+
+        @include breakpiont(mobile) {
+            font-size: .8rem;
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+
+        }
+    }
+}
+
+nav {
+
+    .logo {
+        width: 3.2rem;
+        height: auto;
+        object-fit: cover;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        @include breakpiont(mobile) {
+            width: 2rem;
+        }
+    }
+    margin-top:4.1rem ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $naranjaClaro;
+    padding: 1.7rem 1.5rem;
+    //Fijado
+    position: fixed;
+    width: 100%;
+    gap: 1rem;
+
+    .tituloNav {
+        color: $celeste;
+        font-size: 2.5rem;
+
+        @include breakpiont(mobile) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .listaNavisActive {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: .3rem;
+        color: $celeste;
+
+        @include breakpiont(mobile) {
+            flex-flow: column nowrap;
+            width: 100%;
+            font-size: .8rem;
+            gap: .7rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: .8rem;
+            font-weight: 600;
+            color: $naranjaClaro;
+
+            // opacity: 1;
+            // overflow: hidden;
+            // transition: all .5s ease;
+            li {
+                width: 100%;
+                padding: .7rem;
+                background-color: $celeste;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .listaNav {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: .3rem;
+        color: $celeste;
+
+        @include breakpiont(mobile) {
+            display: none;
+
+            // overflow:hidden;
+            // opacity: 0;
+            li {
+                display: none;
+            }
+        }
+    }
+
+    .botonHamburguesa {
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        color: $celeste;
+
+        @include breakpiont(mobile) {
+            display: flex;
+        }
+    }
+
+    @include breakpiont(mobile){
+        margin-top:3rem ;
+    }
+
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    transition: all .3s;
+    &:hover{
+        color: $naranjaClaro;
+    }
+  }
+  
+//   .underline:after {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     transform: scaleX(0);
+//     height: 5px;
+//     bottom: 0;
+//     top: 2.3rem;
+//     left: 0;
+//     background-color: white;
+//     transform-origin: bottom right;
+//     transition: transform 0.6s ease-out;
+//   }
+  
+//   .underline:hover:after {
+//     transform: scaleX(1);
+//     transform-origin: bottom left;
+//   }
+
+  .underline__blue {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline__blue:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    top: 2.3rem;
+    left: 0;
+    background-color: $celeste;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+  }
+  
+  .underline__blue:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

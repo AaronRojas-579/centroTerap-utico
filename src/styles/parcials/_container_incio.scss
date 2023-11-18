@@ -1,0 +1,247 @@
+.container_incio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    // grid-auto-columns: auto;
+    // gap: 10px 12px;
+    // grid-auto-flow: row;
+    grid-template-areas:
+        "-title_inicio -title_inicio -title_inicio"
+        "main_inicio main_inicio main_inicio"
+        "multimedia_incio1 multimedia_incio1 aside_inicio"
+        "profecionales_inicio profecionales_inicio profecionales_inicio";
+    padding-top: 10.4rem;
+    //Importante el orden en que se colocarn los mediaquerie desde el más grande al más chico
+
+
+
+    .-title_inicio {
+        grid-area: -title_inicio;
+        width: 100%;
+        height: auto; // borrar
+
+        .title_inicioContent {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            gap: .6rem;
+            align-items: center;
+            padding: 2rem;
+            background: linear-gradient(to right, $violeta, $naranjaClaro);
+            margin: 1.2rem;
+
+            h3 {
+                color: white;
+                font-weight: 100;
+            }
+
+            h2 {
+                color: white;
+                font-family: $fuentePrincipal;
+            }
+
+        }
+
+    }
+
+    .aside_inicio {
+        grid-area: aside_inicio;
+        margin: 1rem 1rem 1rem 0;
+        background-color: $naranjaClaro;
+        height: auto;
+
+        @include breakpiont(mobile) {
+            margin: 1rem 1rem 1rem 1rem;
+        }
+
+        .aside_inicioContent {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            padding: .7rem;
+            height: 100%;
+
+            h3 {
+                color: $celeste;
+                font-weight: bold;
+                margin: 1rem 0 1rem 0;
+            }
+
+            p {
+                color: $celeste;
+                padding: 0 1.4rem 1rem 1.4rem;
+
+
+            }
+
+        }
+
+        // background-color: $naranjaClaro;
+    }
+
+    .main_inicio {
+        grid-area: main_inicio;
+        // margin: 0 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
+
+        .main_inicioContent {
+            // background-color: $naranjaOscuro;
+            color: white;
+            padding: 1.5rem;
+            border: 5px solid $naranjaClaro;
+            border-radius: 0 0 0 0;
+
+            h3 {
+                color: $naranjaClaro;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+                color: $violeta;
+            }
+        }
+    }
+
+    .multimedia_incio1 {
+        grid-area: multimedia_incio1;
+        // width: 60vw;
+        height: 40vh;
+        background-image: url("https://compartirenfamilia.com/wp-content/uploads/2022/04/terapia-infantil.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        margin: 1rem;
+
+        // background-color: red;
+        @include breakpiont (tablet) {
+            background-position: 80%;
+        }
+
+        @include breakpiont(mobile) {
+            background-size: cover;
+            height: 21vh;
+        }
+
+
+    }
+
+
+    .profecionales_inicio {
+        grid-area: profecionales_inicio;
+
+        h2 {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 5rem;
+            margin: 0 1rem 1rem 0;
+            background-color: $celeste;
+            color: $naranjaClaro;
+        }
+
+        .conteinerProfesionales {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .profesional {
+                &1 {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    h4 {
+                        margin: 1rem;
+                    }
+
+                    &img {
+                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        height: 13rem;
+                        width: 13rem;
+                        margin: 1rem;
+                        border-radius: 50%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+
+                &2 {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    h4 {
+                        margin: 1rem;
+                    }
+
+                    &img {
+                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        height: 13rem;
+                        width: 13rem;
+                        margin: 1rem;
+                        border-radius: 50%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+
+                &3 {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    h4 {
+                        margin: 1rem;
+                    }
+
+                    &img {
+                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        height: 13rem;
+                        width: 13rem;
+                        margin: 1rem;
+                        border-radius: 50%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@include breakpiont(tablet) {
+    .container_incio {
+
+
+        grid-template-columns: auto auto auto;
+        padding-top: 14rem;
+    }
+}
+
+@include breakpiont(mobile) {
+    .container_incio {
+
+        grid-template-columns: auto auto auto;
+        padding-top: 8rem;
+        grid-template-areas:
+            "-title_inicio -title_inicio  "
+            "main_inicio main_inicio  "
+            "multimedia_incio1 multimedia_incio1  "
+            "aside_inicio aside_inicio"
+            "profecionales_inicio profecionales_inicio ";
+        // .aside_inicio{
+        //     display: none;
+        // }
+    }
+}
