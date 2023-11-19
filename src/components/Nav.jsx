@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
   const [menu, setMenu] = useState(false);
@@ -46,7 +47,7 @@ export const Nav = () => {
           src="https://cdn.icon-icons.com/icons2/52/PNG/256/signofhealth_medical_10742.png"
           alt="centro de salud"
         />
-        <h1 className="tituloNav">Centro Terapeutico</h1>
+        <h1 className="tituloNav">Nombre del Centro</h1>
         <button className="botonHamburguesa" onClick={toggleMenu}>
           <svg
             className="menuHamburguesa"
@@ -62,9 +63,9 @@ export const Nav = () => {
           </svg>
         </button>
         <ul className={`listaNav${menu ? "isActive" : ""}`}>
-          <li className="underline__blue">Estudios</li>
-          <li className="underline__blue" >Contacto</li>
-          <li className="underline__blue" >Nosotros</li>
+          <li className="underline__blue"><NavLink className="link" to="/">Incio</NavLink></li>
+          <li className="underline__blue" ><NavLink to="/contacto">Ubicación</NavLink></li>
+          <li className="underline__blue" ><NavLink to="/nosotros">Nosotros</NavLink></li>
           <li className="underline__blue">Rehabilitación</li>
         </ul>
       </nav>

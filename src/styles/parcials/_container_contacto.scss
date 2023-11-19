@@ -1,0 +1,35 @@
+.containerContacto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13rem;
+    height: 100vh;
+    background-color: $celeste;
+    h3{
+        color:$naranjaClaro;
+        font-size: 2rem;
+    }
+    .contactoUbicacion{
+        margin: 2rem;
+        width: 80vw;
+        height: 40rem;
+        background-color: $naranjaClaro;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        // border-radius: 50% 0 50% 0;
+        iframe{
+            box-shadow: 10px 5px 5px black;
+            border-radius: 30px;
+            border: none;
+            width: 70vw;
+            height: 30rem;
+        }
+    }
+    @include breakpiont(tablet){
+        padding-top: 17rem;
+    }
+}

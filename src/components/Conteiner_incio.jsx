@@ -5,7 +5,7 @@ export const Conteiner_incio = () => {
     <div className="container_incio">
       <div className="-title_inicio">
         <div className="title_inicioContent">
-          <h2>Centro Pame es</h2>
+          <h2>Nombre del Centro</h2>
           <h3>ACOMPAÑAMIENTO</h3>
         </div>
       </div>

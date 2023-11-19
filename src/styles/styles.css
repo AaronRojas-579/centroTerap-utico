@@ -171,6 +171,9 @@ nav .listaNavisActive {
     font-weight: 600;
     color: #FFBE0B;
   }
+  nav .listaNavisActive a {
+    color: #FFBE0B;
+  }
   nav .listaNavisActive li {
     width: 100%;
     padding: .7rem;
@@ -327,6 +330,7 @@ nav .botonHamburguesa {
 }
 
 .contenedorFooter ul li {
+  text-align: center;
   margin-bottom: .7rem;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -335,6 +339,10 @@ nav .botonHamburguesa {
 .contenedorFooter ul li:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+
+.contenedorFooter ul .iconFooter {
+  width: 2.2rem;
 }
 
 .iconWP {
@@ -664,6 +672,149 @@ nav .botonHamburguesa {
   }
 }
 
+.containerContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 13rem;
+  height: 100vh;
+  background-color: #3A86FF;
+}
+
+.containerContacto h3 {
+  color: #FFBE0B;
+  font-size: 2rem;
+}
+
+.containerContacto .contactoUbicacion {
+  margin: 2rem;
+  width: 80vw;
+  height: 40rem;
+  background-color: #FFBE0B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+.containerContacto .contactoUbicacion iframe {
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+  border-radius: 30px;
+  border: none;
+  width: 70vw;
+  height: 30rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerContacto {
+    padding-top: 17rem;
+  }
+}
+
+.containerNosotros {
+  padding-top: 10.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerNosotros .portadaImg {
+  background-image: url("https://www.psicnuevocomienzo.com/wp-content/uploads/2021/03/bored-boy-PJJ9FGU-scaled-1.jpg");
+  opacity: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .containerNosotros .portadaImg {
+    background-position: left;
+  }
+}
+
+.containerNosotros h2 {
+  margin: .8rem;
+  color: white;
+  font-size: 4rem;
+  opacity: 100%;
+  text-shadow: 2px 2px black;
+}
+
+.containerNosotros .infoNosotros .titleinfoNosotros {
+  width: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 3rem;
+  background-color: #3A86FF;
+  color: #FFBE0B;
+}
+
+.containerNosotros .infoNosotros .conocenos {
+  padding: 3rem 22vw 3rem 22vw;
+}
+
+.containerNosotros .infoNosotros .conocenos h3 {
+  padding: 0 0 2rem 0;
+  color: #3A86FF;
+  font-size: 1.5rem;
+}
+
+.containerNosotros .infoNosotros .conocenos p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  .containerNosotros {
+    padding-top: 4rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -674,5 +825,10 @@ nav .botonHamburguesa {
 
 * body {
   background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #3A86FF;
 }
 /*# sourceMappingURL=styles.css.map */
