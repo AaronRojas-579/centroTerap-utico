@@ -1,12 +1,12 @@
 .contenedorFooter{
     display: flex;
     flex-flow: row wrap;
-    width: auto;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
-    background-color:$naranjaClaro;
-    color: $celeste;
+    background: linear-gradient(to bottom, $azul1, $azul4);
+    color: white;
     ul{
         width: 10rem;
         list-style: none;

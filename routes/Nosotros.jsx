@@ -24,6 +24,8 @@ export const Nosotros = () => {
             innovadora, personalizada y humana.
           </p>
         </div>
+        <div className="conocemos1">
+        </div>
       </div>
     </div>
   );

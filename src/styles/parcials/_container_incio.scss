@@ -1,4 +1,5 @@
 .container_incio {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -10,7 +11,7 @@
         "main_inicio main_inicio main_inicio"
         "multimedia_incio1 multimedia_incio1 aside_inicio"
         "profecionales_inicio profecionales_inicio profecionales_inicio";
-    padding-top: 10.4rem;
+    padding-top: 14.5rem;
     //Importante el orden en que se colocarn los mediaquerie desde el más grande al más chico
 
 
@@ -24,20 +25,40 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
-            gap: .6rem;
+            gap: 2rem;
             align-items: center;
             padding: 2rem;
-            background: linear-gradient(to right, $violeta, $naranjaClaro);
-            margin: 1.2rem;
+            background: linear-gradient(to right, $azul1, $azul4);
+            margin: 4rem 0;
+
+            @include breakpiont(tablet) {
+                margin: 2rem 0;
+            }
+
+            @include breakpiont(mobile) {
+                gap: .4rem;
+                padding: 1rem;
+                margin: 2.3rem 0 1rem 0;
+            }
 
             h3 {
+                font-size: 1.6rem;
                 color: white;
                 font-weight: 100;
+
+                @include breakpiont(mobile) {
+                    font-size: 1rem;
+                }
             }
 
             h2 {
+                font-size: 2rem;
                 color: white;
                 font-family: $fuentePrincipal;
+
+                @include breakpiont(mobile) {
+                    font-size: 1rem;
+                }
             }
 
         }
@@ -47,12 +68,10 @@
     .aside_inicio {
         grid-area: aside_inicio;
         margin: 1rem 1rem 1rem 0;
-        background-color: $naranjaClaro;
+        padding: 0 4rem 0 4rem;
+        background-color: white;
+        border: 5px solid $fucsia1;
         height: auto;
-
-        @include breakpiont(mobile) {
-            margin: 1rem 1rem 1rem 1rem;
-        }
 
         .aside_inicioContent {
             display: flex;
@@ -63,18 +82,50 @@
             height: 100%;
 
             h3 {
-                color: $celeste;
+                color: $azul4;
+                font-size: 1.8rem;
                 font-weight: bold;
                 margin: 1rem 0 1rem 0;
             }
 
             p {
-                color: $celeste;
+                color: $azul2;
                 padding: 0 1.4rem 1rem 1.4rem;
+                font-size: 1.15rem;
+                font-style: italic;
 
 
             }
 
+        }
+
+        @include breakpiont(tablet) {
+            // padding: 0 1rem 1rem 1rem;
+            margin: 1rem 1rem 1rem 1rem;
+            .aside_inicioContent {
+                h3 {
+                    font-size: 1.5rem;
+                    // margin: 1rem 0 1rem 0;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        @include breakpiont(mobile) {
+            padding: 0 1rem 1rem 1rem;
+            margin: 1rem 1rem 1rem 1rem;
+            border: 2px solid $fucsia1;
+            .aside_inicioContent {
+                h3 {
+                    font-size: 1.2rem;
+                    // margin: 1rem 0 1rem 0;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
 
         // background-color: $naranjaClaro;
@@ -82,24 +133,56 @@
 
     .main_inicio {
         grid-area: main_inicio;
-        // margin: 0 1rem 0 1rem;
-        padding: 0 1rem 0 1rem;
+        margin: 0 5rem 3.3rem 5rem;
+
+        // padding: 0 10rem 0 10rem;
+        // margin: 4rem 0 5rem 0;
+        @include breakpiont(tablet) {
+            margin: 0 4rem 2rem 4rem;
+        }
+
+        @include breakpiont(mobile) {
+            margin: 0 1rem 1rem 1rem;
+        }
 
         .main_inicioContent {
             // background-color: $naranjaOscuro;
             color: white;
-            padding: 1.5rem;
-            border: 5px solid $naranjaClaro;
-            border-radius: 0 0 0 0;
+            padding: 4rem;
+            border: 5px solid $fucsia1;
+            // border-radius: 0 0 0 0;
 
             h3 {
-                color: $naranjaClaro;
-                margin-bottom: 1rem;
+
+                color: black;
+                margin-bottom: 1.4rem;
+                font-size: 1.5rem;
             }
 
             p {
-                margin-bottom: 1rem;
-                color: $violeta;
+                margin-bottom: 4rem;
+                color: $azul1;
+                font-style: italic;
+                font-size: 1.2rem;
+
+            }
+
+            @include breakpiont(tablet) {}
+
+            @include breakpiont(mobile) {
+                border: 2px solid $fucsia1;
+                padding: 2rem;
+
+                h3 {
+                    margin-bottom: 1rem;
+                    font-size: 1rem;
+                }
+
+                p {
+                    margin-bottom: 3rem;
+                    font-size: .9rem;
+
+                }
             }
         }
     }
@@ -138,9 +221,9 @@
             justify-content: center;
             align-items: center;
             height: 5rem;
-            margin: 0 1rem 1rem 0;
-            background-color: $celeste;
-            color: $naranjaClaro;
+            margin: 2rem 0 2rem 0;
+            background: linear-gradient(to right, $azul1, $azul4);
+            color: white;
         }
 
         .conteinerProfesionales {
@@ -148,17 +231,10 @@
             flex-flow: row wrap;
             justify-content: space-around;
             align-items: center;
-
+            margin: 5rem 1em;
             .profesional {
                 &1 {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    h4 {
-                        margin: 1rem;
-                    }
+                    @include profesional;
 
                     &img {
                         background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
@@ -172,15 +248,7 @@
                 }
 
                 &2 {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    h4 {
-                        margin: 1rem;
-                    }
-
+                    @include profesional;
                     &img {
                         background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
                         height: 13rem;
@@ -193,14 +261,7 @@
                 }
 
                 &3 {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    h4 {
-                        margin: 1rem;
-                    }
+                    @include profesional;
 
                     &img {
                         background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
@@ -223,17 +284,16 @@
 @include breakpiont(tablet) {
     .container_incio {
 
-
         grid-template-columns: auto auto auto;
-        padding-top: 14rem;
+        padding-top: 18rem;
     }
 }
 
 @include breakpiont(mobile) {
     .container_incio {
 
-        grid-template-columns: auto auto auto;
-        padding-top: 8rem;
+        grid-template-columns: auto auto;
+        padding-top: 8.5rem;
         grid-template-areas:
             "-title_inicio -title_inicio  "
             "main_inicio main_inicio  "

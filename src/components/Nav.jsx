@@ -44,10 +44,10 @@ export const Nav = () => {
       <nav>
         <img
           className="logo"
-          src="https://cdn.icon-icons.com/icons2/52/PNG/256/signofhealth_medical_10742.png"
+          src="https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/centroSalud.png?alt=media&token=223abab5-6390-4dca-922c-62d2c03516c6"
           alt="centro de salud"
         />
-        <h1 className="tituloNav">Nombre del Centro</h1>
+        <h1 className="tituloNav">Nombre del <span className="tituloNav--span">Centro</span></h1>
         <button className="botonHamburguesa" onClick={toggleMenu}>
           <svg
             className="menuHamburguesa"
