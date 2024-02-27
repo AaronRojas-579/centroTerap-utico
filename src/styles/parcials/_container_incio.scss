@@ -30,6 +30,9 @@
             padding: 2rem;
             background: linear-gradient(to right, $azul1, $azul4);
             margin: 4rem 0;
+            .title_inicioContent_text{
+                width: 85vw;
+            }
 
             @include breakpiont(tablet) {
                 margin: 2rem 0;
@@ -237,7 +240,7 @@
                     @include profesional;
 
                     &img {
-                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        background-image: url("https://amtch.org/wp-content/uploads/2019/05/evaluacion-del-lenguaje-infantil-Por-Alma-Esther-Acun%CC%83a-Olguin-1061x675.jpg");
                         height: 13rem;
                         width: 13rem;
                         margin: 1rem;
@@ -250,7 +253,7 @@
                 &2 {
                     @include profesional;
                     &img {
-                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        background-image: url("https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/female_nurse_boy_patient_physical_therapy_1200x852_77401.ashx");
                         height: 13rem;
                         width: 13rem;
                         margin: 1rem;
@@ -264,7 +267,7 @@
                     @include profesional;
 
                     &img {
-                        background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+                        background-image: url("https://media.motivar.com.ar/p/e56ff4eccd0ab2a9fcf45b00ad137c27/adjuntos/355/imagenes/100/000/0100000373/790x0/smart/foto-libro-registrosjpg.jpg");
                         height: 13rem;
                         width: 13rem;
                         margin: 1rem;

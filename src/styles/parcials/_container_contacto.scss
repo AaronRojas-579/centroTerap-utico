@@ -3,18 +3,18 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding-top: 13rem;
+    padding-top: 18rem;
     height: 100vh;
-    background-color: $celeste;
+    background-color: $azul3;
     h3{
-        color:$naranjaClaro;
+        color:white;
         font-size: 2rem;
     }
     .contactoUbicacion{
         margin: 2rem;
         width: 80vw;
         height: 40rem;
-        background-color: $naranjaClaro;
+        background-color: $azul2;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;

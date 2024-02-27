@@ -47,7 +47,7 @@ export const Nav = () => {
           src="https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/centroSalud.png?alt=media&token=223abab5-6390-4dca-922c-62d2c03516c6"
           alt="centro de salud"
         />
-        <h1 className="tituloNav">Nombre del <span className="tituloNav--span">Centro</span></h1>
+        <h1 className="tituloNav">Neuro<span className="tituloNav--span">Caminos</span></h1>
         <button className="botonHamburguesa" onClick={toggleMenu}>
           <svg
             className="menuHamburguesa"
@@ -66,7 +66,7 @@ export const Nav = () => {
           <li className="underline__blue"><NavLink className="link" to="/">Incio</NavLink></li>
           <li className="underline__blue" ><NavLink to="/contacto">Ubicación</NavLink></li>
           <li className="underline__blue" ><NavLink to="/nosotros">Nosotros</NavLink></li>
-          <li className="underline__blue">Rehabilitación</li>
+          {/* <li className="underline__blue">Rehabilitación</li> */}
         </ul>
       </nav>
     </>

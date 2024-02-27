@@ -447,6 +447,10 @@ nav .botonHamburguesa {
   margin: 4rem 0;
 }
 
+.container_incio .-title_inicio .title_inicioContent .title_inicioContent_text {
+  width: 85vw;
+}
+
 @media screen and (max-width: 1024px) {
   .container_incio .-title_inicio .title_inicioContent {
     margin: 2rem 0;
@@ -687,12 +691,13 @@ nav .botonHamburguesa {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 25rem;
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional1 h3 {
@@ -705,7 +710,7 @@ nav .botonHamburguesa {
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional1img {
-  background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+  background-image: url("https://amtch.org/wp-content/uploads/2019/05/evaluacion-del-lenguaje-infantil-Por-Alma-Esther-Acun%CC%83a-Olguin-1061x675.jpg");
   height: 13rem;
   width: 13rem;
   margin: 1rem;
@@ -722,12 +727,13 @@ nav .botonHamburguesa {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 25rem;
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional2 h3 {
@@ -740,7 +746,7 @@ nav .botonHamburguesa {
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional2img {
-  background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+  background-image: url("https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/female_nurse_boy_patient_physical_therapy_1200x852_77401.ashx");
   height: 13rem;
   width: 13rem;
   margin: 1rem;
@@ -757,12 +763,13 @@ nav .botonHamburguesa {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 25rem;
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional3 h3 {
@@ -775,7 +782,7 @@ nav .botonHamburguesa {
 }
 
 .container_incio .profecionales_inicio .conteinerProfesionales .profesional3img {
-  background-image: url("https://hips.hearstapps.com/hmg-prod/images/bad-bunny-1672827485.jpg?crop=1xw:0.8056640625xh;center,top&resize=980:*");
+  background-image: url("https://media.motivar.com.ar/p/e56ff4eccd0ab2a9fcf45b00ad137c27/adjuntos/355/imagenes/100/000/0100000373/790x0/smart/foto-libro-registrosjpg.jpg");
   height: 13rem;
   width: 13rem;
   margin: 1rem;
@@ -815,13 +822,13 @@ nav .botonHamburguesa {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 13rem;
+  padding-top: 18rem;
   height: 100vh;
-  background-color: #3A86FF;
+  background-color: #4361EE;
 }
 
 .containerContacto h3 {
-  color: #FFBE0B;
+  color: white;
   font-size: 2rem;
 }
 
@@ -829,7 +836,7 @@ nav .botonHamburguesa {
   margin: 2rem;
   width: 80vw;
   height: 40rem;
-  background-color: #FFBE0B;
+  background-color: #4895EF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,7 +928,7 @@ nav .botonHamburguesa {
   font-size: 2.4rem;
   padding: 3rem;
   background-color: #3A86FF;
-  color: #FFBE0B;
+  color: white;
 }
 
 .containerNosotros .infoNosotros .conocenos {

@@ -8,20 +8,13 @@ export const Nosotros = () => {
         <h2>Mejor Caldiad de Vida</h2>
       </div>
       <div className="infoNosotros">
-        <h3 className="titleinfoNosotros">NEUROREHABILITACIÓN</h3>
+        <h3 className="titleinfoNosotros">CONOCENOS</h3>
         <div className="conocenos">
-          <h3>CONOCENOS</h3>
+          <h3>Neuro caminos, es un Centro especializado en trastornos del neurodesarrollo, relizamos detección y atención temprana.</h3>
           <p>
-            SIENES es el único centro de neurorehabilitación ambulatorio de zona
-            norte que ofrece un tratamiento transdisciplinario personalizado
-            combinando lo tecnológico y lo humano para el diagnóstico,
-            tratamiento y rehabilitación de pacientes con trastornos
-            neurológicos, del desarrollo y cognitivos.
+            Conformado por profesionales  con disposición y formación continua que trabaja  de forma transdiciplinaria bajo una ética de trabajo común que ordena y acompaña las intervenciones desde las distintas disciplinas para ofrecer una guía  integral a las necesidades de nuestros pacientes.
+            Comprometidos con la calidad y empatia, brindamos   servicios de Rehabilitación Integral,Evaluaciones y Consultas ambulatorias, teniendo en cuenta las  fortalezas  y desafíos que presenta cada persona.
 
-            Ayudamos a personas con afecciones neurológicas a aceptarse y
-            recuperar la confianza en sí mismas para tener mayor autonomía y
-            vivir mejor. Sienes brinda una experiencia de neurorehabilitación
-            innovadora, personalizada y humana.
           </p>
         </div>
         <div className="conocemos1">
