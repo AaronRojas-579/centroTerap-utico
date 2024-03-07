@@ -3,7 +3,7 @@ import React from "react";
 export const InconWP = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=+541123240822&text=Hola+me+gustar%C3%ADa+reservar+un+turno"
+      href="https://api.whatsapp.com/send/?phone=%2B5491123678790&text=Hola%21%21+Quisiera+pedir+un+turno&type=phone_number&app_absent=0"
       className="botonWP"
       target="blank"
     >

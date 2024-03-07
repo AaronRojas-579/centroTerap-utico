@@ -6,17 +6,22 @@
 @import "./parcials/container_incio"; 
 @import "./parcials/container_contacto";
 @import "./parcials/container_nosotros";
+@import "./parcials/carrusel";
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: $fuenteTerciaria;
+    scroll-behavior: smooth;
     body{
-        background-color: white;
+        background-color: $azul1;
     }
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: $azul2;
+}
+div[id]{
+    scroll-margin-top:12rem ;
 }

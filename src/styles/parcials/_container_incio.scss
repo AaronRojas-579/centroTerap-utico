@@ -1,310 +1,505 @@
 .container_incio {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    // grid-auto-columns: auto;
-    // gap: 10px 12px;
-    // grid-auto-flow: row;
-    grid-template-areas:
-        "-title_inicio -title_inicio -title_inicio"
-        "main_inicio main_inicio main_inicio"
-        "multimedia_incio1 multimedia_incio1 aside_inicio"
-        "profecionales_inicio profecionales_inicio profecionales_inicio";
-    padding-top: 14.5rem;
-    //Importante el orden en que se colocarn los mediaquerie desde el más grande al más chico
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // position: relative;
+  grid-template-rows: auto auto auto auto auto;
+  // grid-auto-columns: auto;
+  // gap: 10px 12px;
+  // grid-auto-flow: row;
+  grid-template-areas:
+        // "carrusel_main carrusel_main carrusel_main"
 
+    "imgInicio imgInicio imgInicio"
+    "-title_inicio -title_inicio -title_inicio"
+    "main_inicio main_inicio main_inicio"
+    "multimedia_incio1 multimedia_incio1 aside_inicio"
+    "profecionales_inicio profecionales_inicio profecionales_inicio"
+    "containerUbicacion containerUbicacion containerUbicacion"
+    "teleasistencia teleasistencia teleasistencia"
+    ;
+  padding-top: 16em;
+  //Importante el orden en que se colocarn los mediaquerie desde el más grande al más chico
 
-
-    .-title_inicio {
-        grid-area: -title_inicio;
-        width: 100%;
-        height: auto; // borrar
-
-        .title_inicioContent {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            gap: 2rem;
-            align-items: center;
-            padding: 2rem;
-            background: linear-gradient(to right, $azul1, $azul4);
-            margin: 4rem 0;
-            .title_inicioContent_text{
-                width: 85vw;
-            }
-
-            @include breakpiont(tablet) {
-                margin: 2rem 0;
-            }
-
-            @include breakpiont(mobile) {
-                gap: .4rem;
-                padding: 1rem;
-                margin: 2.3rem 0 1rem 0;
-            }
-
-            h3 {
-                font-size: 1.6rem;
-                color: white;
-                font-weight: 100;
-
-                @include breakpiont(mobile) {
-                    font-size: 1rem;
-                }
-            }
-
-            h2 {
-                font-size: 2rem;
-                color: white;
-                font-family: $fuentePrincipal;
-
-                @include breakpiont(mobile) {
-                    font-size: 1rem;
-                }
-            }
-
+  .containerUbicacion{
+    grid-area: containerUbicacion;
+    height: 30rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    // gap: 1rem;
+    background-color: $azul3;
+    &_direccion{
+        width: 25rem;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 2rem;
+        // background-color: $azul1;
+        padding: 2rem;
+        h3{
+            color: #fff;
+            font-size: 2rem;
         }
-
-    }
-
-    .aside_inicio {
-        grid-area: aside_inicio;
-        margin: 1rem 1rem 1rem 0;
-        padding: 0 4rem 0 4rem;
-        background-color: white;
-        border: 5px solid $fucsia1;
-        height: auto;
-
-        .aside_inicioContent {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            padding: .7rem;
-            height: 100%;
-
-            h3 {
-                color: $azul4;
-                font-size: 1.8rem;
-                font-weight: bold;
-                margin: 1rem 0 1rem 0;
-            }
-
-            p {
-                color: $azul2;
-                padding: 0 1.4rem 1rem 1.4rem;
-                font-size: 1.15rem;
-                font-style: italic;
-
-
-            }
-
-        }
-
-        @include breakpiont(tablet) {
-            // padding: 0 1rem 1rem 1rem;
-            margin: 1rem 1rem 1rem 1rem;
-            .aside_inicioContent {
-                h3 {
-                    font-size: 1.5rem;
-                    // margin: 1rem 0 1rem 0;
-                }
-                p {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-
-        @include breakpiont(mobile) {
-            padding: 0 1rem 1rem 1rem;
-            margin: 1rem 1rem 1rem 1rem;
-            border: 2px solid $fucsia1;
-            .aside_inicioContent {
-                h3 {
-                    font-size: 1.2rem;
-                    // margin: 1rem 0 1rem 0;
-                }
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        // background-color: $naranjaClaro;
-    }
-
-    .main_inicio {
-        grid-area: main_inicio;
-        margin: 0 5rem 3.3rem 5rem;
-
-        // padding: 0 10rem 0 10rem;
-        // margin: 4rem 0 5rem 0;
-        @include breakpiont(tablet) {
-            margin: 0 4rem 2rem 4rem;
-        }
-
-        @include breakpiont(mobile) {
-            margin: 0 1rem 1rem 1rem;
-        }
-
-        .main_inicioContent {
-            // background-color: $naranjaOscuro;
-            color: white;
-            padding: 4rem;
-            border: 5px solid $fucsia1;
-            // border-radius: 0 0 0 0;
-
-            h3 {
-
-                color: black;
-                margin-bottom: 1.4rem;
-                font-size: 1.5rem;
-            }
-
-            p {
-                margin-bottom: 4rem;
-                color: $azul1;
-                font-style: italic;
-                font-size: 1.2rem;
-
-            }
-
-            @include breakpiont(tablet) {}
-
-            @include breakpiont(mobile) {
-                border: 2px solid $fucsia1;
-                padding: 2rem;
-
-                h3 {
-                    margin-bottom: 1rem;
-                    font-size: 1rem;
-                }
-
-                p {
-                    margin-bottom: 3rem;
-                    font-size: .9rem;
-
-                }
-            }
+        p{
+            color: #fff;
+            font-size:1.3rem ;
         }
     }
-
-    .multimedia_incio1 {
-        grid-area: multimedia_incio1;
-        // width: 60vw;
-        height: 40vh;
-        background-image: url("https://compartirenfamilia.com/wp-content/uploads/2022/04/terapia-infantil.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 100%;
-        margin: 1rem;
-
-        // background-color: red;
-        @include breakpiont (tablet) {
-            background-position: 80%;
-        }
-
-        @include breakpiont(mobile) {
-            background-size: cover;
-            height: 21vh;
-        }
-
-
-    }
-
-
-    .profecionales_inicio {
-        grid-area: profecionales_inicio;
-
-        h2 {
+    &_ubi{
+        width: 60vw;
+        height: 70%;
+        iframe{
             width: 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            height: 5rem;
-            margin: 2rem 0 2rem 0;
-            background: linear-gradient(to right, $azul1, $azul4);
-            color: white;
-        }
+            height: 100%;
+            border: none;
 
-        .conteinerProfesionales {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            align-items: center;
-            margin: 5rem 1em;
-            .profesional {
-                &1 {
-                    @include profesional;
-
-                    &img {
-                        background-image: url("https://amtch.org/wp-content/uploads/2019/05/evaluacion-del-lenguaje-infantil-Por-Alma-Esther-Acun%CC%83a-Olguin-1061x675.jpg");
-                        height: 13rem;
-                        width: 13rem;
-                        margin: 1rem;
-                        border-radius: 50%;
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-
-                &2 {
-                    @include profesional;
-                    &img {
-                        background-image: url("https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/female_nurse_boy_patient_physical_therapy_1200x852_77401.ashx");
-                        height: 13rem;
-                        width: 13rem;
-                        margin: 1rem;
-                        border-radius: 50%;
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-
-                &3 {
-                    @include profesional;
-
-                    &img {
-                        background-image: url("https://media.motivar.com.ar/p/e56ff4eccd0ab2a9fcf45b00ad137c27/adjuntos/355/imagenes/100/000/0100000373/790x0/smart/foto-libro-registrosjpg.jpg");
-                        height: 13rem;
-                        width: 13rem;
-                        margin: 1rem;
-                        border-radius: 50%;
-                        background-position: center;
-                        background-size: cover;
-                    }
-                }
-            }
         }
     }
 
+  }
+  .teleasistencia {
+    grid-area: teleasistencia;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    background-color: $azul3;
+    position: relative;
+    margin-bottom:1.4rem ;
 
+    &_fondo {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+    &_img {
+      border-radius: 50% 50% 50% 50%;
+      width: 17rem;
+      // width: 70px;
+      height: 17rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      left: 300px;
+    }
+    &_text {
+      width: 30vw;
+      color: #fff;
+      font-size: 1.7rem;
+      position: absolute;
+      right: 300px;
+    }
+    @include breakpiont(tablet) {
+      height: 23rem;
+      &_img {
+        width: 15rem;
+        height: 15rem;
+      }
+      &_text {
+        font-size: 1.5rem;
+      }
+    }
+  }
 
+  .imgInicio {
+    grid-area: imgInicio;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    .image_inicio {
+      opacity: 0.7;
+      width: 100%;
+      height: 30rem;
+      //  background-position-y: -50px;
+      // background-position-x: -100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      //  z-index: 0;
+    }
+    .text_img{
+      width: 70vw;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      gap: 3rem;
+      h2{
+        text-align: center;
+        color: #fff;
+        font-size: 3rem;
+        font-family: $funeteSecundario;
+      }
+      h4{
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+    // .logoPresentacion{
+    //   // margin-top: 3rem;
+    //   width: 30rem;
+    //   height: 20rem;
+    //   position: absolute;
+    //   background-image: url('src/assets/images/neurocaminos.png');
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+    // h2 {
+    //   color: #fff;
+    //   font-size: 3rem;
+    //   text-align: center;
+    //   padding: 10rem;
+    //   font-family: $fuenteTerciaria;
+    //   // color: $azul2;
+    //   position: absolute;
+    //   top: 3.4rem;
+    //   // left: 200px;
+    //   //  z-index: 1;
+    // }
+
+    @include breakpiont(mobile) {
+      background-size: cover;
+    }
+    // @include breakpiont(tablet) {
+    //   h2 {
+    //     top: -2rem;
+    //   }
+    // }
+  }
+  .-title_inicio {
+    grid-area: -title_inicio;
+    width: 100%;
+    height: auto; // borrar
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 2rem;
+    .logoPresentacion{
+      // margin-top: 3rem;
+      width: 20rem;
+      height: 15rem;
+      background-image: url('src/assets/images/neurocaminos.png');
+      background-size: cover;
+      background-position: center;
+    }
+    h2{
+        color: $azul4;
+        font-size: 3rem;
+        margin: 5rem 0 3rem 0 ;
+    }
+    
+
+    .title_inicioContent {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      align-items: flex-start;
+      padding: 2rem;
+      background: linear-gradient(to right, $azul1, $azul4);
+      margin: 4rem 0;
+    //   flex-flow: 20rem;
+      .title_inicioContent_text {
+        text-align:left;
+        max-width: 25rem;
+        font-size: 1.4rem;
+      }
+
+      @include breakpiont(tablet) {
+        margin: 2rem 0;
+
+      }
+
+      @include breakpiont(mobile) {
+        gap: 0.4rem;
+        padding: 1rem;
+        margin: 2.3rem 0 1rem 0;
+      }
+
+      h3 {
+        // font-size: 2rem;
+        color: white;
+        font-weight: 100;
+
+        @include breakpiont(tablet){
+            font-size: 1.3rem;
+        }
+        @include breakpiont(mobile) {
+          font-size: 1rem;
+        }
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: white;
+        font-family: $fuentePrincipal;
+        text-align: center;
+        @include breakpiont(tablet){
+            font-size: 2rem;
+        }
+
+        @include breakpiont(mobile) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .aside_inicio {
+    grid-area: aside_inicio;
+    margin: 1rem 1rem 1rem 0;
+    padding: 0 4rem 0 4rem;
+    background-color: white;
+    border: 5px solid $fucsia1;
+    height: auto;
+
+    .aside_inicioContent {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .7rem 2rem 0.7rem;
+      height: 100%;
+
+      h3 {
+        color: $azul4;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem 0 1rem 0;
+      }
+
+      p {
+        color: black;
+        // padding: 0 1.4rem 1rem 1.4rem;
+        font-size: 1.2rem;
+        // font-style: italic;
+      }
+    }
+
+    @include breakpiont(tablet) {
+      // padding: 0 1rem 1rem 1rem;
+      margin: 1rem 1rem 1rem 1rem;
+      .aside_inicioContent {
+        h3 {
+          font-size: 1.5rem;
+          // margin: 1rem 0 1rem 0;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    @include breakpiont(mobile) {
+      padding: 0 1rem 1rem 1rem;
+      margin: 1rem 1rem 1rem 1rem;
+      border: 2px solid $fucsia1;
+      .aside_inicioContent {
+        h3 {
+          font-size: 1.2rem;
+          // margin: 1rem 0 1rem 0;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    // background-color: $naranjaClaro;
+  }
+
+  .main_inicio {
+    grid-area: main_inicio;
+    margin: 0 5rem 3.3rem 5rem;
+
+    // padding: 0 10rem 0 10rem;
+    // margin: 4rem 0 5rem 0;
+    @include breakpiont(tablet) {
+      margin: 0 4rem 2rem 4rem;
+    }
+
+    @include breakpiont(mobile) {
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    .main_inicioContent {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      .misionesCentro {
+        max-width: 25rem;
+        // background-color: $naranjaOscuro;
+        color: white;
+        padding: 2rem;
+        border: 5px solid $fucsia1;
+        // border-radius: 0 0 0 0;
+
+        h3 {
+          color: $azul3;
+          margin-bottom: 1.4rem;
+          font-size: 1.8rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          color: black;
+          font-style: italic;
+          font-size: 1.5rem;
+        }
+
+        @include breakpiont(tablet) {
+          h3 {
+            font-size: 1.4rem;
+          }
+
+          p {
+            margin-bottom: 1rem;
+            color: black;
+            font-style: italic;
+            font-size: 1rem;
+          }
+        }
+
+        @include breakpiont(mobile) {
+          border: 2px solid $fucsia1;
+          padding: 2rem;
+
+          h3 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+          }
+
+          p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .multimedia_incio1 {
+    grid-area: multimedia_incio1;
+    // width: 60vw;
+    height: auto;
+    background-image: url("https://compartirenfamilia.com/wp-content/uploads/2022/04/terapia-infantil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    margin: 1rem;
+
+    // background-color: red;
+    @include breakpiont(tablet) {
+      background-position: 80%;
+    }
+
+    @include breakpiont(mobile) {
+      background-size: cover;
+      height: 21vh;
+    }
+  }
+
+  .profecionales_inicio {
+    grid-area: profecionales_inicio;
+
+    h2 {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 5rem;
+      margin: 2rem 0 2rem 0;
+      background: linear-gradient(to right, $azul1, $azul4);
+      color: white;
+    }
+
+    .conteinerProfesionales {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 5rem 1em;
+      .profesional {
+        &1 {
+          @include profesional;
+
+          &img {
+            background-image: url("https://amtch.org/wp-content/uploads/2019/05/evaluacion-del-lenguaje-infantil-Por-Alma-Esther-Acun%CC%83a-Olguin-1061x675.jpg");
+            height: 13rem;
+            width: 13rem;
+            margin: 1rem;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+
+        &2 {
+          @include profesional;
+          &img {
+            background-image: url("https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/female_nurse_boy_patient_physical_therapy_1200x852_77401.ashx");
+            height: 13rem;
+            width: 13rem;
+            margin: 1rem;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+
+        &3 {
+          @include profesional;
+
+          &img {
+            background-image: url("https://media.motivar.com.ar/p/e56ff4eccd0ab2a9fcf45b00ad137c27/adjuntos/355/imagenes/100/000/0100000373/790x0/smart/foto-libro-registrosjpg.jpg");
+            height: 13rem;
+            width: 13rem;
+            margin: 1rem;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include breakpiont(tablet) {
-    .container_incio {
-
-        grid-template-columns: auto auto auto;
-        padding-top: 18rem;
-    }
+  .container_incio {
+    grid-template-columns: auto auto auto;
+    padding-top: 20rem;
+  }
 }
 
 @include breakpiont(mobile) {
-    .container_incio {
-
-        grid-template-columns: auto auto;
-        padding-top: 8.5rem;
-        grid-template-areas:
-            "-title_inicio -title_inicio  "
-            "main_inicio main_inicio  "
-            "multimedia_incio1 multimedia_incio1  "
-            "aside_inicio aside_inicio"
-            "profecionales_inicio profecionales_inicio ";
-        // .aside_inicio{
-        //     display: none;
-        // }
-    }
+  .container_incio {
+    grid-template-columns: auto auto;
+    padding-top: 1rem;
+    grid-template-areas:
+      "-title_inicio -title_inicio  "
+      "main_inicio main_inicio  "
+      "multimedia_incio1 multimedia_incio1  "
+      "aside_inicio aside_inicio"
+      "profecionales_inicio profecionales_inicio ";
+    // .aside_inicio{
+    //     display: none;
+    // }
+  }
 }
