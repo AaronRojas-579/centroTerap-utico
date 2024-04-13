@@ -265,10 +265,16 @@ nav .botonHamburguesa {
   width: 2.2rem;
 }
 @media screen and (max-width: 425px) {
+  .contenedorFooter ul {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
   .contenedorFooter {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
   }
 }
 
@@ -306,7 +312,7 @@ nav .botonHamburguesa {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "imgInicio imgInicio imgInicio" "-title_inicio -title_inicio -title_inicio" "main_inicio main_inicio main_inicio" "multimedia_incio1 multimedia_incio1 aside_inicio" "profecionales_inicio profecionales_inicio profecionales_inicio" "containerUbicacion containerUbicacion containerUbicacion" "teleasistencia teleasistencia teleasistencia";
-  padding-top: 16em;
+  padding-top: 15em;
 }
 .container_incio .containerUbicacion {
   grid-area: containerUbicacion;
@@ -433,7 +439,7 @@ nav .botonHamburguesa {
     width: 8rem;
     height: 8rem;
     position: absolute;
-    left: 110px;
+    left: 130px;
     bottom: 50px;
   }
   .container_incio .teleasistencia_text {
@@ -692,7 +698,8 @@ nav .botonHamburguesa {
 @media screen and (max-width: 425px) {
   .container_incio .main_inicio .main_inicioContent .misionesCentro {
     border: 2px solid white;
-    padding: 2rem;
+    padding: 1rem;
+    width: 100%;
   }
   .container_incio .main_inicio .main_inicioContent .misionesCentro h3 {
     margin-bottom: 1rem;

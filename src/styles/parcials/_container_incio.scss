@@ -18,7 +18,7 @@
     "containerUbicacion containerUbicacion containerUbicacion"
     "teleasistencia teleasistencia teleasistencia"
   ;
-  padding-top: 16em;
+  padding-top: 15em;
   //Importante el orden en que se colocarn los mediaquerie desde el más grande al más chico
 
   .containerUbicacion {
@@ -183,7 +183,7 @@
         // background-position: center;
         position: absolute;
         
-        left:110px;
+        left:130px;
         
         bottom: 50px;
         // align-items: center;
@@ -532,7 +532,8 @@
 
         @include breakpiont(mobile) {
           border: 2px solid white;
-          padding: 2rem;
+          padding: 1rem;
+          width: 100%;
 
           h3 {
             margin-bottom: 1rem;

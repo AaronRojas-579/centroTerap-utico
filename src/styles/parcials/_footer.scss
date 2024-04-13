@@ -30,10 +30,14 @@
         .iconFooter{
             width: 2.2rem;
         }
+        @include breakpiont(mobile){
+            align-items: center;
+        }
     }
     @include breakpiont(mobile){
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        padding: 3rem 0;
     }
 }
