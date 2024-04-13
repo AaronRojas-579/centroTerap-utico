@@ -672,7 +672,7 @@
 @include breakpiont(mobile) {
   .container_incio {
     grid-template-columns: auto auto;
-    padding-top: 12rem;
+    padding-top: 10rem;
     grid-template-areas:
       "imgInicio imgInicio "
       "-title_inicio -title_inicio  "

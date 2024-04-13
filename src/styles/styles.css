@@ -60,7 +60,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  padding: 1.7rem 1.5rem;
+  padding: 1rem 1.5rem;
   position: fixed;
   width: 100%;
   gap: 1rem;
@@ -69,7 +69,7 @@ nav .logoName {
   width: 23rem;
 }
 nav .logoTotal {
-  background-image: url("src/assets/images/neurocaminos.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/neurocaminos.png?alt=media&token=274817a2-799a-4e43-9957-4a50be40a383");
   width: 15rem;
   height: 9rem;
   background-position: center;
@@ -96,8 +96,8 @@ nav .logo:hover {
 }
 @media screen and (max-width: 425px) {
   nav .logoTotal {
-    width: 10rem;
-    height: 6rem;
+    width: 8rem;
+    height: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -840,7 +840,7 @@ nav .botonHamburguesa {
 @media screen and (max-width: 425px) {
   .container_incio {
     grid-template-columns: auto auto;
-    padding-top: 12rem;
+    padding-top: 10rem;
     grid-template-areas: "imgInicio imgInicio " "-title_inicio -title_inicio  " "main_inicio main_inicio  " "multimedia_incio1 multimedia_incio1  " "aside_inicio aside_inicio" "profecionales_inicio profecionales_inicio " "containerUbicacion containerUbicacion " "teleasistencia teleasistencia ";
   }
 }
@@ -1011,5 +1011,5 @@ a {
 }
 
 div[id] {
-  scroll-margin-top: 12rem;
+  scroll-margin-top: 9rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -26,13 +26,13 @@ export const Conteiner_incio = () => {
           <div
             className="teleasistencia_fondo"
             style={{
-              backgroundImage: `url(src/assets/images/teleasistencia.jpeg)`,
+              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/teleasistencia.jpeg?alt=media&token=fa7f1a76-6339-4079-88f5-6bf4b5bc769c)`,
             }}
           ></div>
           <div
             className="teleasistencia_img"
             style={{
-              backgroundImage: `url(src/assets/images/drappImg.webp)`,
+              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/drappImg.webp?alt=media&token=23aa503f-8157-451f-bb22-0ff732d136cc)`,
             }}
           ></div>
           <div className="teleasistencia_text">

@@ -63,7 +63,7 @@ nav {
         width: 23rem;
     }
     .logoTotal{
-        background-image: url("src/assets/images/neurocaminos.png");
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/neurocaminos.png?alt=media&token=274817a2-799a-4e43-9957-4a50be40a383");
         width: 15rem;
         height: 9rem;
         background-position: center;
@@ -95,15 +95,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    padding: 1.7rem 1.5rem;
+    padding: 1rem 1.5rem;
     //Fijado
     position: fixed;
     width: 100%;
     gap: 1rem;
     @include breakpiont(mobile) {
-            .logoTotal{
-        width:10rem;
-        height: 6rem;
+        .logoTotal{
+        width:8rem;
+        height:5rem;
         background-size: cover;
         background-repeat: no-repeat;
     }
