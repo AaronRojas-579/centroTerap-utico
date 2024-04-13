@@ -124,7 +124,7 @@
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      opacity: 0.7;
+      opacity: 0.5;
     }
 
     &_img {
@@ -353,7 +353,7 @@
       gap: 2rem;
       align-items: flex-start;
       padding: 2rem;
-      background: linear-gradient(to right, $azul1, $azul4);
+      background: linear-gradient(to right, $azul2, $azul4);
       margin: 4rem 0;
 
       //   flex-flow: 20rem;
@@ -412,8 +412,8 @@
     grid-area: aside_inicio;
     margin: 1rem 1rem 1rem 0;
     padding: 0 4rem 0 4rem;
-    background-color: white;
-    border: 5px solid $fucsia1;
+    // background-color: white;
+    border: 5px solid white;
     height: auto;
 
     .aside_inicioContent {
@@ -425,14 +425,14 @@
       height: 100%;
 
       h3 {
-        color: $azul4;
+        color: $azul3;
         font-size: 1.5rem;
         font-weight: bold;
         margin: 1rem 0 1rem 0;
       }
 
       p {
-        color: black;
+        color: $azul4;
         // padding: 0 1.4rem 1rem 1.4rem;
         font-size: 1.2rem;
         // font-style: italic;
@@ -458,16 +458,16 @@
     @include breakpiont(mobile) {
       padding: 0 1rem 1rem 1rem;
       margin: 1rem 1rem 1rem 1rem;
-      border: 2px solid $fucsia1;
+      border: 2px solid white;
 
       .aside_inicioContent {
         h3 {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           // margin: 1rem 0 1rem 0;
         }
 
         p {
-          font-size: 1rem;
+          font-size: .9rem;
         }
       }
     }
@@ -501,18 +501,18 @@
         // background-color: $naranjaOscuro;
         color: white;
         padding: 2rem;
-        border: 5px solid $fucsia1;
+        border: 5px solid white;
         // border-radius: 0 0 0 0;
 
         h3 {
-          color: $azul3;
+          color: $azul4;
           margin-bottom: 1.4rem;
           font-size: 1.8rem;
         }
 
         p {
           margin-bottom: 1rem;
-          color: black;
+          color: white;
           font-style: italic;
           font-size: 1.5rem;
         }
@@ -524,14 +524,14 @@
 
           p {
             margin-bottom: 1rem;
-            color: black;
+            color: $azul4;
             font-style: italic;
             font-size: 1rem;
           }
         }
 
         @include breakpiont(mobile) {
-          border: 2px solid $fucsia1;
+          border: 2px solid white;
           padding: 2rem;
 
           h3 {
@@ -580,7 +580,7 @@
       align-items: center;
       height: 5rem;
       margin: 2rem 0 2rem 0;
-      background: linear-gradient(to right, $azul1, $azul4);
+      background: linear-gradient(to right, $azul2, $azul4);
       color: white;
     }
 
