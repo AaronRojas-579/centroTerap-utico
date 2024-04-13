@@ -261,6 +261,9 @@ nav .botonHamburguesa {
 .contenedorFooter ul li:hover {
   transform: scale(1.2, 1.2);
 }
+.contenedorFooter ul li a {
+  color: white;
+}
 .contenedorFooter ul .iconFooter {
   width: 2.2rem;
 }
