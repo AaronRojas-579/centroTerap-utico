@@ -53,7 +53,7 @@ export const Conteiner_incio = () => {
           <div
             className="image_inicio"
             style={{
-              backgroundImage: `url(https://psicologiagervilla.com/wp-content/uploads/2021/06/bored-boy-PJJ9FGU-scaled-1.jpg)`,
+              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/IMG-20240724-WA0039.jpg?alt=media&token=a3234eb5-391f-4126-a390-1a58940a2edf)`,
             }}
           ></div>
           <div className="text_img">
