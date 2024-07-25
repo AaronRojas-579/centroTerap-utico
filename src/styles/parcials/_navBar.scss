@@ -2,12 +2,12 @@
     width: 100%;
     height: inherit;
     padding: 1rem;
-    background-color: $azul2;
+    background-color: white;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    color: $azul3;
+    color: white;
     gap: 1rem;
     position: fixed;
     z-index: 100;
@@ -19,7 +19,7 @@
         align-items: center;
         gap: 1rem;
         &:hover{
-            color: white;
+            color: $azul1;
         }
     }
 
@@ -33,7 +33,7 @@
             color: $azul3;
             transition: all .3s;
             &:hover{
-                color: white;
+                color: $azul1;
             }
         }
 
@@ -94,7 +94,8 @@ nav {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background: linear-gradient(0.25turn,  $azul2, $azul3, $azul2);
+    // background: linear-gradient(to right, $azul2, $azul4);
     padding: 1rem 1.5rem;
     //Fijado
     position: fixed;
@@ -135,7 +136,7 @@ nav {
         font-size: 1.8rem;
         font-weight: 600;
         margin: .3rem;
-        // color: white;
+        color: white;
 
         @include breakpiont(mobile) {
             flex-flow: column nowrap;
@@ -158,11 +159,15 @@ nav {
             li {
                 width: 100%;
                 padding: .7rem;
-                background-color: $azul2;
+                background-color: white;
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
                 justify-content: center;
+                a{
+                    text-decoration: none;
+                    color: $azul4;
+                }
             }
         }
     }
@@ -176,7 +181,10 @@ nav {
         font-size: 1.8rem;
         font-weight: 600;
         margin: .3rem;
-        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
         @include breakpiont(mobile) {
             display: none;
@@ -195,7 +203,7 @@ nav {
         border: none;
         cursor: pointer;
 
-        color: $celeste;
+        color:white;
 
         @include breakpiont(mobile) {
             display: flex;
@@ -212,6 +220,9 @@ nav {
     display: inline-block;
     position: relative;
     transition: all .3s;
+    // a{
+    //     color: white;
+    // }
     &:hover{
         color: white;
     }
@@ -250,7 +261,7 @@ nav {
     bottom: 0;
     top: 2.3rem;
     left: 0;
-    background-color: $azul2;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.6s ease-out;
     @include breakpiont(mobile){

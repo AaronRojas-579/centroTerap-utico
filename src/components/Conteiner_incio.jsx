@@ -9,12 +9,10 @@ export const Conteiner_incio = () => {
       <div className="container_incio">
         <div className="containerUbicacion" id="ubicacion">
           <div className="containerUbicacion_ubi">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.752033578389!2d-58.63641659999999!3d-34.4584419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca48508f072ef%3A0x65a7f32b9df1b9f3!2sSta.%20Fe%20920%2C%20B1617FPT%20Gral.%20Pacheco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1spt-BR!2sar!4v1709333284558!5m2!1spt-BR!2sar"
-            ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.83154139725!2d-58.639918699999996!3d-34.4564239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca486ac74c255%3A0x388b23297480c217!2sAv.%20Constituyentes%20444%2C%20B1617AAR%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1spt-BR!2sar!4v1721922698765!5m2!1spt-BR!2sar"></iframe>
           </div>
           <div className="containerUbicacion_direccion">
-            <h3>Santa Fe 920, General Pachecho</h3>
+            <h3>Av. Constituyentes 444, General Pachecho</h3>
             <p>
               Horarios de atención
               <br />
@@ -58,9 +56,9 @@ export const Conteiner_incio = () => {
           ></div>
           <div className="text_img">
           <h2>
-            "Los grandes logros de cualquier persona generalmente dependen de muchas manos, corazones y mentes"
+          Somos el Centro de Rehabilitación Integral, creemos que cada persona tiene un potencial único. Nuestro compromiso es brindar el apoyo necesario para que cada individuo con trastornos del neurodesarrollo pueda alcanzar sus metas y mejorar su calidad de vida.
           </h2>
-          <h4><i>Walt Disney</i></h4>
+          {/* <h4><i>Walt Disney</i></h4> */}
           </div>
           {/* <div className="logoPresentacion"></div> */}
         </div>
@@ -190,7 +188,7 @@ export const Conteiner_incio = () => {
               <div className="profesional1img"></div>
               <h3>
                 {" "}
-                <i>EVALUACIONES</i>
+                <strong>EVALUACIONES</strong>
               </h3>
               <h4>
                 Consideramos al proceso de detección mediante una evaluación
@@ -222,7 +220,7 @@ export const Conteiner_incio = () => {
               <div className="profesional2img"></div>
               <h3>
                 {" "}
-                <i>REHABILITACION</i>{" "}
+                <strong>REHABILITACION</strong>{" "}
               </h3>
               <h4>
                 El programa de Rehabilitación Integral está dirigido a niños y
@@ -263,7 +261,7 @@ export const Conteiner_incio = () => {
             <div className="profesional3">
               <div className="profesional3img"></div>
               <h3>
-                <i>AREA SOCIAL</i>
+                <strong>AREA SOCIAL</strong>
               </h3>
               <h4>
                 Neurocaminos cuenta con un servicio de Orientación
