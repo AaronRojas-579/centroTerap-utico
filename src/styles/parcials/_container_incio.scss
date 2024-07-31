@@ -1,6 +1,8 @@
 .container_incio {
   width: 100%;
-  background-color: #fff;
+  // background-color: #fff;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?alt=media&token=a64d2817-f79d-4232-b133-1bd674f81177");
+  background-size: contain;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   // position: relative;
@@ -237,7 +239,7 @@
       h2 {
         text-align: center;
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 2.7rem;
         font-family: $fuentePrincipal;
       }
 
@@ -294,10 +296,10 @@
         gap: 3rem;
   
         h2 {
-          padding: 2rem;
+          padding: 2.7rem;
           text-align: center;
           color: #fff;
-          font-size:1.3rem;
+          font-size:1.6rem;
           // font-family: $funeteSecundario;
         }
   
@@ -365,6 +367,7 @@
         font-size: 1.4rem;
         @include breakpiont(mobile) {
           font-size: .9rem;
+          padding: 1.2rem;
         }
       }
 
@@ -415,7 +418,7 @@
     margin: 1rem 1rem 1rem 0;
     padding: 0 4rem 0 4rem;
     // background-color: white;
-    border: 5px solid white;
+    // border: 5px solid white;
     height: auto;
 
     .aside_inicioContent {
@@ -434,7 +437,7 @@
       }
 
       p {
-        color: $azul4;
+        color: $azul3;
         // padding: 0 1.4rem 1rem 1.4rem;
         font-size: 1.2rem;
         // font-style: italic;
@@ -460,7 +463,7 @@
     @include breakpiont(mobile) {
       padding: 0 1rem 1rem 1rem;
       margin: 1rem 1rem 1rem 1rem;
-      border: 2px solid white;
+      // border: 2px solid white;
 
       .aside_inicioContent {
         h3 {

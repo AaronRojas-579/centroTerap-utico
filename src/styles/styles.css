@@ -319,7 +319,8 @@ nav .botonHamburguesa {
 
 .container_incio {
   width: 100%;
-  background-color: #fff;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?alt=media&token=a64d2817-f79d-4232-b133-1bd674f81177");
+  background-size: contain;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
@@ -493,7 +494,7 @@ nav .botonHamburguesa {
 .container_incio .imgInicio .text_img h2 {
   text-align: center;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   font-family: "Open Sans";
 }
 .container_incio .imgInicio .text_img h4 {
@@ -511,10 +512,10 @@ nav .botonHamburguesa {
     gap: 3rem;
   }
   .container_incio .imgInicio .text_img h2 {
-    padding: 2rem;
+    padding: 2.7rem;
     text-align: center;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .container_incio .imgInicio .text_img h4 {
     color: #fff;
@@ -566,6 +567,7 @@ nav .botonHamburguesa {
 @media screen and (max-width: 425px) {
   .container_incio .-title_inicio .title_inicioContent .title_inicioContent_text {
     font-size: 0.9rem;
+    padding: 1.2rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -609,7 +611,6 @@ nav .botonHamburguesa {
   grid-area: aside_inicio;
   margin: 1rem 1rem 1rem 0;
   padding: 0 4rem 0 4rem;
-  border: 5px solid white;
   height: auto;
 }
 .container_incio .aside_inicio .aside_inicioContent {
@@ -627,7 +628,7 @@ nav .botonHamburguesa {
   margin: 1rem 0 1rem 0;
 }
 .container_incio .aside_inicio .aside_inicioContent p {
-  color: #3F37C9;
+  color: #4361EE;
   font-size: 1.2rem;
 }
 @media screen and (max-width: 1024px) {
@@ -645,7 +646,6 @@ nav .botonHamburguesa {
   .container_incio .aside_inicio {
     padding: 0 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
-    border: 2px solid white;
   }
   .container_incio .aside_inicio .aside_inicioContent h3 {
     font-size: 1.1rem;

@@ -51,12 +51,12 @@ export const Conteiner_incio = () => {
           <div
             className="image_inicio"
             style={{
-              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/IMG-20240724-WA0039.jpg?alt=media&token=a3234eb5-391f-4126-a390-1a58940a2edf)`,
+              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Centro1.jpeg?alt=media&token=75709f22-86a3-4bfc-af3f-de97261f6113)`,
             }}
           ></div>
           <div className="text_img">
           <h2>
-          Somos el Centro de Rehabilitación Integral, creemos que cada persona tiene un potencial único. Nuestro compromiso es brindar el apoyo necesario para que cada individuo con trastornos del neurodesarrollo pueda alcanzar sus metas y mejorar su calidad de vida.
+           Nuestro compromiso es brindar el apoyo necesario para que cada individuo con trastornos del neurodesarrollo pueda alcanzar sus metas y mejorar su calidad de vida.
           </h2>
           {/* <h4><i>Walt Disney</i></h4> */}
           </div>
@@ -67,52 +67,23 @@ export const Conteiner_incio = () => {
         {/* <div className="logoPresentacion"></div> */}
           <div className="title_inicioContent">
             <h3 className="title_inicioContent_text">
-              Nuestros valores fundacionales se basan en la convicción de que
-              todos niños tienen derecho a acceder a los servicios que los
-              conduzcan a alcanzar su pleno potencial cognitivo-emocional.
-              Ponemos énfasis en las características individuales de cada niño,
-              en sus aspectos culturales y sociales y en la etapa del desarrollo
-              emocional y psicomotor en la que se encuentre. Los procesos del
-              neurodesarrollo son uno de los pilares fundamentales del
-              desarrollo infantil. Por esta razón, es imprescindible trabajar
-              desde un enfoque interdisciplinario, mediante el diseño de
-              programas terapéuticos individualizados, específicos, holísticos
-              en sus consideraciones e intensivos. Como equipo
-              terapeuta-medico-familia realizamos la elección de las mejores
-              oportunidades de intervención solo puede ser apropiada si se
-              sostiene una visión longitudinal de la vida del niño y su entorno.
+            En Neurocaminos somos un centro especializado en neurodesarrollo, ubicado en Tigre, Pacheco, Buenos Aires- Argentina. Nuestro compromiso es ofrecer un servicio integral y humanizado para acompañar el desarrollo de cada individuo. Contamos con un equipo de profesionales altamente capacitados y en constante actualización, dedicados a proporcionar un entorno de apoyo y crecimiento.
             </h3>
             <h3 className="title_inicioContent_text">
-              En la actualidad, el NEUROCAMINOS ofrece un equipo capacitado
-              CONTINUAMENTE directamente por profesionales externos
-              especializados en la población. Todos los programas son
-              coordinados por profesionales especialistas en la población de TND
-              Nuestro objetivo principal en el ingreso de una familia , al ser
-              expuesto a la diversidad de experiencias necesarias en distintos
-              ambientes según su edad, crezca desarrollando sus capacidades
-              funcionales. Es decir que nuestro desafío es acompañarlo junto a
-              su familia, para construir el camino de estrategias que le
-              permitirán desarrollar la máxima autonomía e independencia posible
-              en favor de su inclusión social. Por tal razón, consideramos
-              imprescindible contar con programas terapéuticos donde padres o
-              cuidadores tengan participación directa en las sesiones de
-              intervención,
+              
+Nuestra misión es proporcionar una atención personalizada y de calidad, enfocada en las necesidades específicas de cada persona, promoviendo su bienestar y potenciando sus capacidades. Nos enorgullece ser un centro comprometido con la comunidad, donde cada individuo es valorado y respetado.
             </h3>
             <h3 className="title_inicioContent_text">
-              como también los terapeutas tratantes, médicos de cabecera y
-              docentes de la escuela a la que pertenecen. Todos los
-              profesionales que constituyen el entorno educativo y social del
-              niño y su familia se encuentran incluidos en el proceso de
-              diagnóstico y/o tratamiento.
-              <br />
-              <i>
-                Actualmente somos 17 profesionales en los diferentes servicios
-                mas personal administrativo ,maestranza y redes que hacen
-                posible este gran sueño de crear un centro diferente , generado
-                con responsabilidad afectiva, empatía y conciencia real. Nos
-                encontramos ubicados en el centro de Gral. Pacheco Santa fe 920
-                localidad de tigre.
-              </i>
+              
+<strong>Nuestros valores:</strong>
+<br />
+-<strong>Compromiso</strong> Nos dedicamos a ofrecer el mejor servicio, con dedicación y responsabilidad.
+<br />
+-<strong>Formación</strong> Nuestro equipo está en constante aprendizaje y actualización para brindar el mejor apoyo.
+<br />
+-<strong>Humanidad</strong> Creemos en un trato cercano, respetuoso y personalizado, poniendo siempre a la persona en el centro de nuestro trabajo.
+<br /><br />
+<i>Te invitamos a conocer más sobre nuestros servicios y cómo podemos ayudarte en este camino</i>
             </h3>
             <br />
           </div>
@@ -142,38 +113,30 @@ export const Conteiner_incio = () => {
             <div className="misionesCentro">
               <h3>MISIÓN</h3>
               <p>
-                Brindar atención e intervención de excelencia, con calidez, a
-                través de un equipo de salud comprometido con la capacitación y
-                la innovación , cumpliendo con los más altos estándares de
-                calidad y logrando la máxima satisfacción en las familias.
+              Proporcionar una atención integral y personalizada a pacientes con trastornos del neurodesarrollo. Nos dedicamos a fomentar el bienestar y el crecimiento personal de cada individuo mediante terapias innovadoras y un enfoque humano. Buscamos ser un apoyo constante tanto para nuestros pacientes como para sus familias, mejorando su calidad de vida y potenciando sus capacidades.
               </p>
             </div>
             <div className="misionesCentro">
               <h3>VISIÓN</h3>
               <p>
-                Ser una empresa reconocida por sus pacientes, profesionales y en
-                el entorno social como una organización excelente, responsable,
-                eficiente y competitiva, comprometida con los tratamientos y la
-                salud de los niños.
+              Nuestra visión es convertirnos en el centro de referencia en Argentina para la rehabilitación de pacientes con trastornos del neurodesarrollo. Aspiramos a liderar el campo mediante la innovación, la excelencia en el servicio y el compromiso con la comunidad. Queremos ser reconocidos por nuestro enfoque humanizado y nuestros altos estándares de calidad, contribuyendo al desarrollo y la inclusión de nuestros pacientes en la sociedad.
               </p>
             </div>
             <div className="misionesCentro">
               <h3>VALORES</h3>
               <p>
-                • Responsabilidad y profesionalidad.
-                <br />
-                • Honestidad y ética profesional.
-                <br />
-                • Orientación al cliente.
-                <br />
-                • Trabajo en equipo.
-                <br />
-                • Calidad.
-                <br />
-                • Eficacia.
-                <br />
-                • Eficiencia.
-                <br />• Innovación.
+
+<strong>Compromiso</strong>: Nos dedicamos a ofrecer una atención de calidad, con responsabilidad y dedicación constante.
+<br />
+<strong>Innovación</strong>: Aplicamos terapias y técnicas vanguardistas para garantizar el mejor tratamiento posible.
+<br />
+<strong>Humanidad</strong>: Creemos en un trato cercano, respetuoso y personalizado, priorizando siempre el bienestar de la persona.
+<br />
+<strong>Formación Continua</strong>: Nuestro equipo está en constante aprendizaje y actualización para brindar el mejor apoyo.
+<br />
+<strong>Inclusión</strong>: Promovemos la integración y participación activa de nuestros pacientes en la comunidad.
+<br />
+<strong>Colaboración</strong>: Trabajamos en equipo con las familias y otros profesionales para asegurar un enfoque integral en el tratamiento.
               </p>
             </div>
           </div>
