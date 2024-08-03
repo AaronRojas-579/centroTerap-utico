@@ -51,7 +51,7 @@ export const Conteiner_incio = () => {
           <div
             className="image_inicio"
             style={{
-              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Centro1.jpeg?alt=media&token=75709f22-86a3-4bfc-af3f-de97261f6113)`,
+              backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/WhatsApp%20Image%202024-08-02%20at%2012.49.44.jpeg?alt=media&token=ce057e77-010f-4a8f-99ff-3ffcc1d5bd89)`,
             }}
           ></div>
           <div className="text_img">

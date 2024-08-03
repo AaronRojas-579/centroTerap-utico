@@ -1,7 +1,7 @@
 .container_incio {
   width: 100%;
   // background-color: #fff;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?alt=media&token=a64d2817-f79d-4232-b133-1bd674f81177");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/MejorDeMejores.png?alt=media&token=40c6091f-a648-414d-ae35-bec1aadcefad");
   background-size: contain;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -185,9 +185,9 @@
         // background-size: cover;
         // background-position: center;
         position: absolute;
-        
+
         left:130px;
-        
+
         bottom: 50px;
         // align-items: center;
       }
@@ -219,11 +219,11 @@
       opacity: 0.7;
       width: 100%;
       height: 30rem;
-      //  background-position-y: -50px;
+       background-position-y: -1100px;
       // background-position-x: -100px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center ;
+      // background-position: center ;
       //  z-index: 0;
     }
 
@@ -277,14 +277,14 @@
         // opacity: 0.7;
         // width: 100%;
         // height: 30rem;
-        //  background-position-y: -50px;
+        // background-position-y: -5000px;
         // background-position-x: -100px;
         // background-size: cover;
         // background-repeat: no-repeat;
-        // background-position: -150px;
+        background-position: center;
         //  z-index: 0;
       }
-  
+
       .text_img {
         width: 100%;
         display: flex;
@@ -294,7 +294,7 @@
         position: absolute;
         // padding: 2rem;
         gap: 3rem;
-  
+
         h2 {
           padding: 2.7rem;
           text-align: center;
@@ -302,13 +302,13 @@
           font-size:1.6rem;
           // font-family: $funeteSecundario;
         }
-  
+
         h4 {
           color: #fff;
           font-size:1.2rem;
         }
       }
-      
+
     }
 
     // @include breakpiont(tablet) {
