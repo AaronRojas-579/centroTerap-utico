@@ -59,7 +59,7 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(0.25turn, #4895EF, #4361EE, #4895EF);
+  background: linear-gradient(0.25turn, #4895EF, #4895EF, #4361EE);
   padding: 1rem 1.5rem;
   position: fixed;
   width: 100%;
@@ -69,7 +69,7 @@ nav .logoName {
   width: 23rem;
 }
 nav .logoTotal {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/backend-5dd0b.appspot.com/o/neurocaminos.png?alt=media&token=274817a2-799a-4e43-9957-4a50be40a383");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/taniker-rojas.appspot.com/o/Logo_Nuevo-removebg-preview.png?alt=media&token=14360c86-6112-42e0-aee3-c28025d97776");
   width: 15rem;
   height: 9rem;
   background-position: center;
